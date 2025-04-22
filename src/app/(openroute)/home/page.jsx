@@ -6,7 +6,7 @@ import Image from 'next/image';
 import { getCache, setCache, isCacheStale } from '../../../data/cache'; // Import cache utilities
 import axiosInstance from '@/context/Authorization';
 import mawuli from '@/img/mawuli.jpg'; // Ensure the image is in the public folder or use Next.js's static image handling
-import Metadata from '../../../utils/metadata';
+// import Metadata from '../../../utils/metadata';
 const endPoint = process.env.NEXT_PUBLIC_BASE_URL;
 
 
