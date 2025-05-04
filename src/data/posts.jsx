@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { getCache, setCache, isCacheStale } from './cache'; // Import cache utilities
-import axiosInstance from '@/context/Authorization';
+// import axiosInstance from '@/context/Authorization';
 import { useRouter } from 'next/router';
 
 const endPoint = process.env.NEXT_PUBLIC_BASE_URL;
