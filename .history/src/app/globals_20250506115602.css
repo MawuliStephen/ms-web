@@ -289,41 +289,23 @@ a:hover {
   background: var(--color-primary-contrast);
 }
 
-/* styles/globals.css or wherever you inject global styles */
-/* .pdf-mode * {
-  Force fallback colors compatible with html2canvas
-  color: black !important;
-  background-color: white !important;
-  box-shadow: none !important;
-  text-shadow: none !important;
-} */
+@media print {
+  .print-area * {
+    visibility: visible;
+  }
+  .no-print {
+    display: none !important;
+  }
 
-/* .pdf-mode .print-area {
-  width: 794px;     exact A4 width at 96dpi
-  font-size: 12pt;
-  color: black !important;
-  background-color: white !important;
-} */
-
-/* Different styles only for PDF export */
-.pdf-mode {
-  width: 794px; /* A4 in px at 96dpi */
-  font-size: 12pt;
-  background: white;
-  color: black;
-  padding: 2rem;
-  line-height: 1.5;
+  /* Add to your global CSS */
+.print-area, .print-area * {
+  visibility: visible !important;
+  opacity: 1 !important;
 }
 
-.pdf-mode .section-title {
-  font-size: 18pt;
-  font-weight: bold;
-  margin-bottom: 12px;
+@media print {
+  * {
+    color: rgb(0, 0, 0) !important; /* or your preferred safe color */
+  }
 }
-
-.pdf-mode p {
-  font-size: 12pt;
-  margin-bottom: 10px;
 }
-
-/* You can add as many overrides as needed */

@@ -75,7 +75,9 @@ export default function AboutPageContent() {
             </div>
 
             {/* Printable content */}
-            <div ref={printRef} className="print:p-8 space-y-8 print:space-y-6 print-area"    >
+            <div ref={printRef} className="print:p-8 space-y-8 print:space-y-6 print-area"
+           
+            >
             
             
                 <SectionLayout id="about-preamble" className="print:pt-0">

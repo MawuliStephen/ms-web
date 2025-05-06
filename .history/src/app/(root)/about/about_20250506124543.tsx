@@ -66,8 +66,8 @@ export default function AboutPageContent() {
 
                     {isRefReady && (
                         <DownloadPDFButton
-                            componentRef={printRef}
-                            documentTitle={filteredContent[activeFilter].title}
+                            // componentRef={printRef}
+                            // documentTitle={filteredContent[activeFilter].title}
                         />
                     )}
 
@@ -75,7 +75,14 @@ export default function AboutPageContent() {
             </div>
 
             {/* Printable content */}
-            <div ref={printRef} className="print:p-8 space-y-8 print:space-y-6 print-area"    >
+            <div ref={printRef} className="print:p-8 space-y-8 print:space-y-6 print-area"
+              style={{
+                width: '794px',
+                minHeight: '1123px',
+                // padding: '40px',
+                fontSize: '12pt',
+              }}
+            >
             
             
                 <SectionLayout id="about-preamble" className="print:pt-0">

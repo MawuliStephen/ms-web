@@ -10,9 +10,7 @@ import { Volunteering } from './components/volunteering';
 import { Hobbies } from './components/hobbies';
 import { Button } from '../components/navigations/button';
 // import  {DownloadPDFButton}  from './components/download-pdf-button';
-// import  {DownloadPDFButton}  from './components/print-button';
-import  {DownloadPDFButton}  from './new';
-
+import  {DownloadPDFButton}  from './components/print-button';
 
 
 export default function AboutPageContent() {
@@ -75,7 +73,14 @@ export default function AboutPageContent() {
             </div>
 
             {/* Printable content */}
-            <div ref={printRef} className="print:p-8 space-y-8 print:space-y-6 print-area"    >
+            <div ref={printRef} className="print:p-8 space-y-8 print:space-y-6 print-area"
+              style={{
+                width: '794px',
+                minHeight: '1123px',
+                padding: '40px',
+                fontSize: '12pt',
+              }}
+            >
             
             
                 <SectionLayout id="about-preamble" className="print:pt-0">

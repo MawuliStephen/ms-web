@@ -66,8 +66,8 @@ export default function AboutPageContent() {
 
                     {isRefReady && (
                         <DownloadPDFButton
-                            componentRef={printRef}
-                            documentTitle={filteredContent[activeFilter].title}
+                            // componentRef={printRef}
+                            // documentTitle={filteredContent[activeFilter].title}
                         />
                     )}
 

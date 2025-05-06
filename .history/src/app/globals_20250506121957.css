@@ -289,41 +289,50 @@ a:hover {
   background: var(--color-primary-contrast);
 }
 
-/* styles/globals.css or wherever you inject global styles */
-/* .pdf-mode * {
-  Force fallback colors compatible with html2canvas
-  color: black !important;
-  background-color: white !important;
-  box-shadow: none !important;
-  text-shadow: none !important;
+/* 
+@media print {
+  .print-area, 
+  .print-area * {
+    visibility: visible !important;
+    opacity: 1 !important;
+    color: rgb(0, 0, 0) !important; /* Fallback for unsupported color formats like oklch */
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  * {
+    color: rgb(0, 0, 0) !important; /* Universal fallback for text color */
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .print-area, 
+  .print-area * {
+    color: rgb(255, 255, 255) !important; /* Fallback for unsupported color formats like oklch */
+  }
+}
+@media (prefers-color-scheme: light) {
+  .print-area, 
+  .print-area * {
+    color: rgb(0, 0, 0) !important; /* Fallback for unsupported color formats like oklch */
+  }
+}
+@media print {
+  body {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+  }
+}
+@media print {
+  .no-print {
+    display: none !important;
+  }
+}
+@media print {
+  .print-area {
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
 } */
-
-/* .pdf-mode .print-area {
-  width: 794px;     exact A4 width at 96dpi
-  font-size: 12pt;
-  color: black !important;
-  background-color: white !important;
-} */
-
-/* Different styles only for PDF export */
-.pdf-mode {
-  width: 794px; /* A4 in px at 96dpi */
-  font-size: 12pt;
-  background: white;
-  color: black;
-  padding: 2rem;
-  line-height: 1.5;
-}
-
-.pdf-mode .section-title {
-  font-size: 18pt;
-  font-weight: bold;
-  margin-bottom: 12px;
-}
-
-.pdf-mode p {
-  font-size: 12pt;
-  margin-bottom: 10px;
-}
-
-/* You can add as many overrides as needed */

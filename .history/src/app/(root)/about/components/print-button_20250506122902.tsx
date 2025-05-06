@@ -23,7 +23,6 @@ export const DownloadPDFButton = ({
     const element = componentRef.current;
     if (!element) return;
 
-    document.body.classList.add('pdf-mode'); // Before rendering the PDF, add the class to the body
     const canvas = await html2canvas(element, {
       scale: 2,
       useCORS: true,
