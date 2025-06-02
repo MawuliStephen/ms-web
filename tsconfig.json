@@ -13,6 +13,7 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
+    "typeRoots": ["./types", "./node_modules/@types"],
     "plugins": [
       {
         "name": "next"
@@ -22,6 +23,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/data/cache.js", "src/data/posts.jsx", "src/app/(openroute)/about/page.tsx", "src/app/(openroute)/home/pages.js", "src/app/(openroute)/home/page.jsx", "src/utils/metadata.js", "src/app/(openroute)/page.tsx", "src/app/(openroute)/layout.jsx", "src/app/layout.jsx", "src/app/(openroute)/about/about.jsx", "src/app/(openroute)/blog/blog.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
   "exclude": ["node_modules"]
 }
