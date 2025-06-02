@@ -25,11 +25,19 @@ const HeroSection = () => {
               <button className="btn-primary px-8 py-3 rounded-lg text-lg font-medium transition-all hover:shadow-lg hover:scale-[1.02]">
                 Explore My Work
               </button>
+
               <button className="btn-outline px-8 py-3 rounded-lg text-lg font-medium transition-all hover:shadow-md hover:bg-gray-100 dark:hover:bg-gray-800">
+              Let&apos;s Collaborate
+            </button>
+              {/* <button className="btn-outline px-8 py-3 rounded-lg text-lg font-medium transition-all hover:shadow-md hover:bg-gray-100 dark:hover:bg-gray-800">
                 Let's Collaborate
-              </button>
+              </button> */}
             </div>
           </div>
+
+
+  
+
 
           {/* Hero Media */}
           <div className="relative group">

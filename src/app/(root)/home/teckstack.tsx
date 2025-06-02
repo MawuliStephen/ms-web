@@ -1,6 +1,8 @@
 'use client';
 import { SectionLayout, SectionHeader } from '../components/navigations/section-layout';
 import techStack from '../../../data/techStack';
+import Image from 'next/image';
+
 
 export default function TechStackSection() {
   return (
@@ -16,9 +18,11 @@ export default function TechStackSection() {
             key={index}
             className="flex flex-col items-center gap-3 p-4 bg-white dark:bg-gray-800 rounded-lg border border-gray-100 dark:border-gray-700/50 hover:shadow-md transition-all"
           >
-            <img 
-              src={tech.logo} 
-              alt={tech.name} 
+            <Image
+              src={tech.logo}
+              alt={tech.name}
+              height={100}
+              width={100}
               className="w-12 h-12 object-contain"
               loading="lazy"
             />

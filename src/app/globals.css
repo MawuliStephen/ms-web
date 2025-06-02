@@ -69,10 +69,7 @@
     color: var(--nav-text);
     transition: background-color 0.3s ease, color 0.3s ease;
   }
-  /* .nav-text {
-    color: var(--nav-text);
-    transition: color 0.3s ease;
-  } */
+
 
   .section-background {
     background-color: var(--color-background);
@@ -145,17 +142,12 @@
     transition: color 0.2s ease;
   }
 
-  /* .nav-text:hover {
-    color: var(--color-primary-contrast);
-  }  */
-
-
 
   /* Typography */
   .title {
     font-size: 1.875rem;
     font-weight: 700;
-    /* color: var(--color-foreground); */
+    color: var(--color-foreground);
     line-height: 1.2;
     margin-bottom: 1rem;
   }
@@ -163,7 +155,7 @@
   .subtitle {
     font-size: 1.25rem;
     font-weight: 600;
-    /* color: var(--color-foreground); */
+    color: var(--color-foreground);
     line-height: 1.3;
     margin-bottom: 0.75rem;
   }
@@ -171,7 +163,7 @@
   .body-text {
     font-size: 1rem;
     font-weight: 400;
-    /* color: var(--color-foreground); */
+    color: var(--color-foreground);
     line-height: 1.5;
   }
 
@@ -184,8 +176,8 @@
 
   /* Cards */
   .card {
-    background-color: var(--color-card);
-    /* background-color: var(--card-bg); */
+    /* background-color: var(--color-card); */
+    background-color: var(--card-bg);
     border-radius: 0.5rem;
     padding: 1.5rem;
     transition: all 0.3s ease;
@@ -195,6 +187,14 @@
     transform: translateY(-2px);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
+
+  #projects {
+    background-color: var(--card-bg);
+  }
+
+  /* #skills{
+    background-color:var(--color-primary-contrast);
+  } */
 }
 
 @layer utilities {
@@ -307,7 +307,8 @@ a:hover {
 
 /* Different styles only for PDF export */
 .pdf-mode {
-  width: 794px; /* A4 in px at 96dpi */
+  width: 794px;
+  /* A4 in px at 96dpi */
   font-size: 12pt;
   background: white;
   color: black;

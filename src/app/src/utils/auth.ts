@@ -1,6 +1,7 @@
 // utils/auth.ts
 import { parseCookies, setCookie, destroyCookie } from 'nookies';
-import { useRouter } from 'next/navigation';
+// import type { User } from './user';
+// import { useRouter } from 'next/navigation';
 
 // Get the auth token from cookies or localStorage
 export const getAuthToken = (): string | null => {
@@ -79,10 +80,10 @@ export const clearUser = () => {
     localStorage.removeItem('user'); // Remove from localStorage
   }
 };
-// Updated logout function
-export const logout = (router: any) => {
-  clearAuthToken(); // Clear token from cookies and localStorage
-  clearUser(); // Clear user data from cookies and localStorage
-  // Redirect user to login page after logout
-  router.push('/auth/login');
-};
+// // Updated logout function
+// export const logout = (router: any) => {
+//   clearAuthToken(); // Clear token from cookies and localStorage
+//   clearUser(); // Clear user data from cookies and localStorage
+//   // Redirect user to login page after logout
+//   router.push('/auth/login');
+// };
