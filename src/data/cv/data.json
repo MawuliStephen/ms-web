@@ -12,7 +12,7 @@
       "phone": "+233 (571) 697-172",
       "location": "Kumasi , Ghana",
       "linkedin": "mawuli-stephen",
-      "portfolio": "johndoe.dev",
+      "portfolio": "ms-web-coral.vercel.app",
       "summary": "Highly skilled Software Engineer with 5 years of experience developing and maintaining scalable web and mobile applications. Proficient in Angular, React/Next.js, Flutter and Node.js. Delivered features that boosted user engagement by 30% and cut load times by 40%. Strong in cross-team collaboration, clean code, and fast-paced startup environments. Seeking remote roles at product-focused companies"
     },
     "marketing": {
@@ -22,7 +22,7 @@
       "phone": "+233 (571) 697-172",
       "location": "Kumasi , Ghana",
       "linkedin": "mawuli-stephen",
-      "portfolio": "johndoe.dev",
+      "portfolio": "ms-web-coral.vercel.app",
       "summary": "Passionate technologist with 8+ years of experience..."
     },
     "all": {
@@ -32,8 +32,8 @@
       "phone": "+233 (571) 697-172",
       "location": "Kumasi , Ghana",
       "linkedin": "mawuli-stephen",
-      "portfolio": "johndoe.dev",
-      "summary": "Multidisciplinary professional with 8+ years in tech & marketing..."
+      "portfolio": "ms-web-coral.vercel.app",
+      "summary": "Multidisciplinary professional with combine 15 years in tech & marketing..."
     }
   },
   "hobbies": [
@@ -162,20 +162,20 @@
     }
   ],
   "experiences": [
-        {
+    {
       "role": "Full Stack Developer",
       "company": "AmaliTech",
-      "period": "2020 - Present",
+      "period": "2025 - Present",
       "categories": [
         "tech"
       ],
       "highlights": [
-        "Led a team of students in a voluntry internship program to build TikTok Clone.",
-        "Designed and built RestFul Api both mobile and web",
-        "Define project scope and ensured ",
-        "Implemented a CI/CD pipeline using GitHub Actions, Heroku, Render and Firebase, reducing deployment time by 65% and increasing release reliability",
-        "Prepared the team for Demo and weekly updates",
-        "Debugged errors and provided valuable information to help members "
+        "Led a team of students in a 6-week volunteer internship to successfully develop a functional TikTok clone, strengthening team collaboration and delivery under tight timelines.",
+        "Designed and deployed RESTful APIs for both mobile and web platforms, resulting in seamless cross-platform integration and faster development turnaround.",
+        "Defined project scope and implemented best practices in code quality and architecture, improving maintainability and team efficiency.",
+        "Set up a CI/CD pipeline using GitHub Actions and Render, which reduced deployment time by 65% and significantly improved code reliability through integrated testing.",
+        "Coached team members for weekly demos and stakeholder updates, improving presentation quality and stakeholder engagement.",
+        "Resolved critical bugs and mentored team members through technical challenges, accelerating development and boosting team problem-solving confidence."
       ]
     },
     {
