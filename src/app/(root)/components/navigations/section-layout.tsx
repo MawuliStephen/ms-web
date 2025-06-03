@@ -34,7 +34,7 @@ export const SectionHeader = ({
   <div className="mb-16 text-center">
     <div className="flex flex-col space-y-2 mb-8">
       {[...Array(3)].map((_, i) => (
-        <hr key={i} className="border-t border-gray-200 dark:border-gray-700/50" />
+        <hr key={i} className="border-t border-gray-100 dark:border-gray-700/50" />
       ))}
     </div>
     <h2 className="text-3xl font-bold mb-4 dark:text-foreground">

@@ -189,7 +189,8 @@
   }
 
   #projects {
-    background-color: var(--card-bg);
+    background-color: var(--bg-surface);
+    /* p-4 border rounded-lg bg-surface */
   }
 
   /* #skills{
@@ -346,3 +347,17 @@ a:hover {
 }
 
 /* You can add as many overrides as needed */
+
+@media only screen and (max-width: 768px) {
+    .right img {
+        height: 100% !important;
+        max-width: 100%;
+        object-fit: cover !important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .right, .right img {
+        width: 100% !important;
+    }
+}

@@ -7,8 +7,9 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-gray-900 text-white pt-12">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+    // p-4 border rounded-lg bg-surface
+    <footer className="bg-surface pt-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-0 lg:px-0 grid grid-cols-1 md:grid-cols-3 gap-8">
         <div className="grid">
 
           {/* Logo and description */}
@@ -28,16 +29,16 @@ const Footer = () => {
 
            
             <div className="flex space-x-4">
-              <Link href="#" className="text-gray-400 hover:text-white transition-colors">
+              <Link href="https://facebook/mawulistephens" className="text-gray-400 hover:text-white transition-colors">
                 <SvgIcons.Facebook />
               </Link>
-              < Link href="#" className="text-gray-400 hover:text-white transition-colors">
+              < Link href="https://x.com/mawulistephen" className="text-gray-400 hover:text-white transition-colors">
                 <SvgIcons.Twitter />
               </Link>
-              <Link href="#" className="text-gray-400 hover:text-white transition-colors">
-                <SvgIcons.Instagram />
+              <Link href="https://github.com/MawuliStephen" className="text-gray-400 hover:text-white transition-colors">
+                <SvgIcons.GitHub />
               </Link>
-              <Link href="#" className="text-gray-400 hover:text-white transition-colors">
+              <Link href="https://linkedin/in/mawuli-stephen" className="text-gray-400 hover:text-white transition-colors">
                 <SvgIcons.LinkedIn />
               </Link>
             </div>
@@ -46,32 +47,22 @@ const Footer = () => {
 
         </div>
 
-        {/* Quick Links */}
-        {/* <div>
-          <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
-          <ul className="space-y-2">
-            <li><Link href="/about" className="text-gray-400 hover:text-white">About Us</Link></li>
-            <li><Link href="/services" className="text-gray-400 hover:text-white">Services</Link></li>
-            <li><Link href="/portfolio" className="text-gray-400 hover:text-white">Portfolio</Link></li>
-            <li><Link href="/blog" className="text-gray-400 hover:text-white">Blog</Link></li>
-            <li><Link href="/contact" className="text-gray-400 hover:text-white">Contact</Link></li>
-          </ul>
-        </div> */}
+
 
         {/* Contact Info */}
         <div>
-          <h3 className="text-lg font-semibold mb-4">Contact </h3>
+          <h3 className="text-lg font-semibold nav-text mb-4">Contact </h3>
           <address className="not-italic text-gray-400 space-y-2">
             <p>Yaa Asantewaa II Street</p>
             <p>Kumasi - Ashanti</p>
-            <p>Email: info@example.com</p>
+            <p>Email: stephen.mawuli.dormekpor.com</p>
             <p>Phone: +233(571) 697172</p>
           </address>
         </div>
 
         {/* Newsletter */}
         <div>
-          <h3 className="text-lg font-semibold mb-4">Newsletter</h3>
+          <h3 className="text-lg font-semibold nav-text mb-4">Newsletter</h3>
           <p className="text-gray-400 mb-4">
             Subscribe to our newsletter for the latest updates.
           </p>
@@ -79,12 +70,12 @@ const Footer = () => {
             <input
               type="email"
               placeholder="Your email"
-              className="px-4 py-2 w-full rounded-l focus:outline-none text-gray-900"
+              className="px-4 py-2 w-full rounded-l focus:outline-none nav-text"
               required
             />
             <button
               type="submit"
-              className="btn  px-4 py-2 rounded-r"
+              className="btn  px-4 py-2  rounded-lg"
             >
               Subscribe
             </button>
