@@ -29,7 +29,9 @@ function ContactPage() {
                 animate="visible"
                 variants={fadeUp}
             >
-                Let&apos;s Connect
+
+
+             Let&apos;s Connect
 
             </motion.h1>
 
