@@ -68,15 +68,15 @@ const SkillsSection = () => {
             <p className="text-gray-500 dark:text-gray-400">
               {`No items found for "${selectedSkill}".`}
             </p>
-            
+
             <p className="text-gray-500 dark:text-gray-400">
   No items found for &quot;{selectedSkill}&quot;.
 </p>
 
 
-            <p className="text-gray-500 dark:text-gray-400">
+            {/* <p className="text-gray-500 dark:text-gray-400">
               No items found for &quot;{selectedSkill}&quot;.
-            </p>
+            </p> */}
 
 
 
