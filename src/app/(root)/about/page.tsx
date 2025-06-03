@@ -29,7 +29,6 @@ export const metadata = {
   "Top Rated Freelance Developer Ghana"
 ],
 
-  // keywords: ['Mawuli Stephen', 'Node js developers in Ghana', 'Software Engineer', 'Fullstack Developer', 'Best Developers in Ghana'],
   openGraph: {
     title: 'Mawuli Stephen - About | Software Engineer',
     description: 'Highly skilled Software Engineer with 5 years of experience developing and maintaining scalable web and mobile applications. Proficient in Angular, React/Next.js, Flutter and Node.js.',

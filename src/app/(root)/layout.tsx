@@ -1,51 +1,92 @@
-import React from 'react';
+// app/layout.tsx
+// import './globals.css';
+import type { Metadata } from 'next';
 import Header from './components/navigations/header';
 import Footer from './components/navigations/footer';
 
-export const metadata = {
-  // title: 'Mawuli Stephen | Portfolio',
-  "keywords": [
-    "Mawuli Stephen",
-    "Fullstack JavaScript Developer in Ghana",
-    "Node.js Developer in Ghana",
-    "Top Software Engineer Ghana",
-    "React and Next.js Expert Ghana",
-    "Angular Developer Ghana",
-    "Express.js Backend Developer",
-    "MySQL and PostgreSQL Developer",
-    "Prisma ORM Expert",
-    "Firebase Fullstack Developer",
-    "Remote Node.js Developer",
-    "GitHub Portfolio Developer Ghana",
-    "Fullstack Developer Render Hosting",
-    "JavaScript Developer for Hire",
-    "Best Fullstack Developers in Ghana",
-    "Node.js + React Developer for Startups",
-    "Experienced Fullstack Engineer Ghana",
-    "Hire Node.js Developer Mawuli Stephen",
-    "Ghanaian Software Engineer with React and Node.js",
-    "Top Rated Freelance Developer Ghana"
+export const metadata: Metadata = {
+  title: 'Mawuli Stephen | Fullstack JavaScript Developer & Software Engineer',
+  description:
+    'Experienced Fullstack Software Engineer skilled in building high-performance web and mobile applications using React, Next.js, Angular, Node.js, and Flutter. Open to remote opportunities worldwide.',
+  keywords: [
+    'Mawuli Stephen',
+    'Fullstack JavaScript Developer',
+    'Remote Node.js Developer',
+    'Top Software Engineer',
+    'React Developer',
+    'Next.js Developer',
+    'Angular Developer',
+    'Express.js Backend Developer',
+    'MySQL Developer',
+    'PostgreSQL Developer',
+    'Prisma ORM Expert',
+    'Firebase Fullstack Developer',
+    'Remote JavaScript Developer',
+    'Freelance Fullstack Engineer',
+    'Hire Node.js Developer',
+    'Global Software Engineer',
+    'Flutter & Web App Developer',
+    'JavaScript Engineer for Hire',
+    'Scalable Web Applications Expert',
+    'Top Rated Fullstack Developer',
   ],
+  openGraph: {
+    title: 'Mawuli Stephen | Fullstack Developer & Software Engineer',
+    description:
+      'Global Fullstack Developer with expertise in React, Next.js, Node.js, Angular, and Flutter. Proven success building scalable applications across web and mobile platforms. Available for remote roles worldwide.',
+    images: [
+      {
+        url: '/image/mawuli-stephen.jpg',
+        width: 800,
+        height: 600,
+        alt: 'Mawuli Stephen Headshot',
+      },
+    ],
+  },
 };
 
-export default function Layout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <div className="flex flex-col min-h-screen"> {/* Ensure the container takes the full viewport height */}
-      <header>
-        <Header /> {/* Global Header */}
-      </header>
-
-      <main className="flex-grow">
-        {children} {/* This will render HomePage or any other public pages */}
-      </main>
-
-      <footer className="mt-auto"> {/* Ensures the footer sticks to the bottom if content is short */}
-        <Footer /> {/* Global Footer */}
-      </footer>
-    </div>
+    <html lang="en">
+      <body className="flex flex-col min-h-screen">
+        <Header />
+        <main className="flex-grow">{children}</main>
+        <Footer />
+      </body>
+    </html>
   );
 }
+
+
+
+
+// import React from 'react';
+// import Header from './components/navigations/header';
+// import Footer from './components/navigations/footer';
+
+// // export const metadata = {
+// //   // title: 'Mawuli Stephen | Portfolio',
+// //   description: 'Christmas fortune wheel',
+// // };
+
+// export default function Layout({
+//   children,
+// }: {
+//   children: React.ReactNode;
+// }) {
+//   return (
+//     <div className="flex flex-col min-h-screen"> {/* Ensure the container takes the full viewport height */}
+//       <header>
+//         <Header /> {/* Global Header */}
+//       </header>
+
+//       <main className="flex-grow"> 
+//         {children} {/* This will render HomePage or any other public pages */}
+//       </main>
+
+//       <footer className="mt-auto"> {/* Ensures the footer sticks to the bottom if content is short */}
+//         <Footer /> {/* Global Footer */}
+//       </footer>
+//     </div>
+//   );
+// }
