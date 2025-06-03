@@ -1,0 +1,192 @@
+{
+  "categories": [
+    "tech",
+    "marketing",
+    "all"
+  ],
+  "preamble": {
+    "tech": {
+      "name": "Stephen Mawuli Dormekpor",
+      "title": "Full Stack Engineer ",
+      "email": "stephen.mawuli.dormekpor@gmail.com",
+      "phone": "+233 (571) 697-172",
+      "location": "Kumasi , Ghana",
+      "linkedin": "mawuli-stephen",
+      "portfolio": "johndoe.dev",
+      "summary": "Highly skilled Software Engineer with 5 years of experience developing and maintaining scalable web and mobile applications. Proficient in Angular, React/Next.js, Flutter and Node.js. Delivered features that boosted user engagement by 30% and cut load times by 40%. Strong in cross-team collaboration, clean code, and fast-paced startup environments. Seeking remote roles at product-focused companies"
+    },
+    "marketing": {
+      "name": "Stephen Mawuli Dormekpor",
+      "title": " Digital Marketing Specialist",
+      "email": "stephen.mawuli.dormekpor@gmail.com",
+      "phone": "+233 (571) 697-172",
+      "location": "Kumasi , Ghana",
+      "linkedin": "mawuli-stephen",
+      "portfolio": "johndoe.dev",
+      "summary": "Passionate technologist with 8+ years of experience..."
+    },
+    "all": {
+      "name": "Stephen Mawuli Dormekpor",
+      "title": "Full Stack Developer & Digital Marketing Specialist",
+      "email": "stephen.mawuli.dormekpor@gmail.com",
+      "phone": "+233 (571) 697-172",
+      "location": "Kumasi , Ghana",
+      "linkedin": "mawuli-stephen",
+      "portfolio": "johndoe.dev",
+      "summary": "Multidisciplinary professional with 8+ years in tech & marketing..."
+    }
+  },
+  "hobbies": [
+    "Open Source Contributions",
+    "Photography",
+    "Hiking",
+    "Technical Writing",
+    "Poetry",
+    "Health & Fitness"
+  ],
+  "projects": [
+    {
+      "name": "233bite | E-commerce Platform",
+      "description": "Fast food store with paystack integration with the capacity to process $50k+ monthly",
+      "tech": [
+        "Angular",
+        "Node.js",
+        "Postgres",
+        "Paystack"
+      ],
+      "categories": [
+        "tech"
+      ]
+    },
+        {
+      "name": "Royal institute of Science and Entreprenuership | School Website",
+      "description": "Private Remedial School Website with paystack integration for admission form purchase",
+      "tech": [
+        "React Js",
+        "Node.js",
+        "MySql",
+        "Paystack",
+        "firebase"
+      ],
+      "categories": [
+        "tech"
+      ]
+    },
+    {
+      "name": "Marketing Dashboard",
+      "description": "Custom analytics platform aggregating data from 10+ sources",
+      "tech": [
+        "React",
+        "Python",
+        "BigQuery",
+        "Data Studio API"
+      ],
+      "categories": [
+        "marketing"
+      ]
+    }
+  ],
+  "competencies": {
+    "groups": [
+      "Marketing",
+      "Technology",
+      "Tools and Software",
+      "Other"
+    ],
+    "Marketing": [
+      "Digital Strategy",
+      "SEO/SEM",
+      "Content Marketing",
+      "Social Media",
+      "Conversion Optimization",
+      "Analytics"
+    ],
+    "Technology": [
+      "JavaScript",
+      "TypeScript",
+      "React.js",
+      "Next.js",
+      "Angular",
+      "Flutter",
+      "Node.js",
+      "Express.js",
+      "HTML5",
+      "CSS3",
+      "RESTful APIs",
+      "MySQL",
+      "PostgreSQL",
+      "Firebase",
+      "MongoDB"
+    ],
+    "Tools and Software": [
+      "VS Code",
+      "Git",
+      "GitHub",
+      "Postman",
+      "Figma",
+      "Jira",
+      "Google Analytics",
+      "HubSpot",
+      "Adobe Creative Suite",
+      "Vercel",
+      "Firebase Hosting"
+    ],
+    "Other": [
+      "Project Management",
+      "Team Leadership",
+      "Public Speaking",
+      "Technical Writing",
+      "Agile development",
+      "Time management",
+      "Cross-functional collaboration"
+    ]
+  },
+  "volunteering": [
+    {
+      "role": "Event Organizer and  Mentor",
+      "organization": "Rails Girls Ghana",
+      "date": "2019 - 2022",
+      "categories": [
+        "tech"
+      ],
+      "description": "Provided a free platform for more than 400+ female students learn the basics of web development fundamentals"
+    },
+    {
+      "role": "Marketing Workshop Host",
+      "organization": "Creative Community Hub",
+      "date": "2021 - 2022",
+      "description": "Led sessions on branding and digital strategy for local businesses",
+      "categories": [
+        "marketing"
+      ]
+    }
+  ],
+  "experiences": [
+    {
+      "role": "Full Stack Developer",
+      "company": "Cradx Limited Company",
+      "period": "2020 - Present",
+      "categories": [
+        "tech"
+      ],
+      "highlights": [
+        "Leading communication with clients to understand their ",
+        "Implemented CI/CD pipeline reducing deployment time by 65%",
+        "Mentored 3 junior developers in React best practices"
+      ]
+    },
+    {
+      "role": "Digital Marketing Manager",
+      "company": "Creative Agency",
+      "period": "2017 - 2020",
+      "categories": [
+        "marketing"
+      ],
+      "highlights": [
+        "Grew organic traffic by 250% through SEO strategy",
+        "Managed $500k+ annual ad budget with 5:1 ROAS",
+        "Developed content strategy producing 50+ high-converting pieces"
+      ]
+    }
+  ]
+}

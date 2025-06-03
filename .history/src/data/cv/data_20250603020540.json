@@ -1,0 +1,212 @@
+{
+  "categories": [
+    "tech",
+    "marketing",
+    "all"
+  ],
+  "preamble": {
+    "tech": {
+      "name": "Stephen Mawuli Dormekpor",
+      "title": "Full Stack Engineer ",
+      "email": "stephen.mawuli.dormekpor@gmail.com",
+      "phone": "+233 (571) 697-172",
+      "location": "Kumasi , Ghana",
+      "linkedin": "mawuli-stephen",
+      "portfolio": "johndoe.dev",
+      "summary": "Highly skilled Software Engineer with 5 years of experience developing and maintaining scalable web and mobile applications. Proficient in Angular, React/Next.js, Flutter and Node.js. Delivered features that boosted user engagement by 30% and cut load times by 40%. Strong in cross-team collaboration, clean code, and fast-paced startup environments. Seeking remote roles at product-focused companies"
+    },
+    "marketing": {
+      "name": "Stephen Mawuli Dormekpor",
+      "title": " Digital Marketing Specialist",
+      "email": "stephen.mawuli.dormekpor@gmail.com",
+      "phone": "+233 (571) 697-172",
+      "location": "Kumasi , Ghana",
+      "linkedin": "mawuli-stephen",
+      "portfolio": "johndoe.dev",
+      "summary": "Passionate technologist with 8+ years of experience..."
+    },
+    "all": {
+      "name": "Stephen Mawuli Dormekpor",
+      "title": "Full Stack Developer & Digital Marketing Specialist",
+      "email": "stephen.mawuli.dormekpor@gmail.com",
+      "phone": "+233 (571) 697-172",
+      "location": "Kumasi , Ghana",
+      "linkedin": "mawuli-stephen",
+      "portfolio": "johndoe.dev",
+      "summary": "Multidisciplinary professional with 8+ years in tech & marketing..."
+    }
+  },
+  "hobbies": [
+    "Open Source Contributions",
+    "Photography",
+    "Hiking",
+    "Technical Writing",
+    "Poetry",
+    "Health & Fitness"
+  ],
+  "projects": [
+    {
+      "name": "233bite | E-commerce Platform",
+      "description": "Fast food store with paystack integration with the capacity to process $50k+ monthly",
+      "tech": [
+        "Angular",
+        "Node.js",
+        "Postgres",
+        "Paystack"
+      ],
+      "categories": [
+        "tech"
+      ]
+    },
+    {
+      "name": "Royal institute of Science and Entreprenuership | School Website",
+      "description": "Private Remedial School Website with paystack integration for admission form purchase",
+      "tech": [
+        "React Js",
+        "Node.js",
+        "MySql",
+        "Paystack",
+        "firebase"
+      ],
+      "categories": [
+        "tech"
+      ]
+    },
+    {
+      "name": "Marketing Dashboard",
+      "description": "Custom analytics platform aggregating data from 10+ sources",
+      "tech": [
+        "React",
+        "Python",
+        "BigQuery",
+        "Data Studio API"
+      ],
+      "categories": [
+        "marketing"
+      ]
+    }
+  ],
+  "competencies": {
+    "groups": [
+      "Marketing",
+      "Technology",
+      "Tools and Software",
+      "Other"
+    ],
+    "Marketing": [
+      "Digital Strategy",
+      "SEO/SEM",
+      "Content Marketing",
+      "Social Media",
+      "Conversion Optimization",
+      "Analytics"
+    ],
+    "Technology": [
+      "JavaScript",
+      "TypeScript",
+      "React.js",
+      "Next.js",
+      "Angular",
+      "Flutter",
+      "Node.js",
+      "Express.js",
+      "HTML5",
+      "CSS3",
+      "RESTful APIs",
+      "MySQL",
+      "PostgreSQL",
+      "Firebase",
+      "MongoDB"
+    ],
+    "Tools and Software": [
+      "VS Code",
+      "Git",
+      "GitHub",
+      "Postman",
+      "Figma",
+      "Jira",
+      "Google Analytics",
+      "HubSpot",
+      "Adobe Creative Suite",
+      "Vercel",
+      "Firebase Hosting"
+    ],
+    "Other": [
+      "Project Management",
+      "Team Leadership",
+      "Public Speaking",
+      "Technical Writing",
+      "Agile development",
+      "Time management",
+      "Cross-functional collaboration"
+    ]
+  },
+  "volunteering": [
+    {
+      "role": "Co-Organizer & Mentor",
+      "organization": "Rails Girls Ghana",
+      "date": "2019 - 2022",
+      "categories": [
+        "tech"
+      ],
+      "description": "Led initiatives that introduced over 800+ female students to web development fundamentals. Recruited mentors, organized workshops, and secured funding to support event logistics and outreach."
+    },
+    {
+      "role": "Developer",
+      "organization": "DjangoCon Africa",
+      "date": "2023",
+      "categories": [
+        "tech"
+      ],
+      "description": "Contributed to the development of the official DjangoCon Africa 2023 event website, supporting open-source collaboration and community engagement across the continent."
+    }
+  ],
+  "experiences": [
+        {
+      "role": "Full Stack Developer",
+      "company": "AmaliTech",
+      "period": "2020 - Present",
+      "categories": [
+        "tech"
+      ],
+      "highlights": [
+        "Led a team of students in a voluntry internship program to build TikTok Clone.",
+        "Designed and built RestFul Api both mobile and web",
+        "Define project scope and ensured ",
+        "Implemented a CI/CD pipeline using GitHub Actions, Heroku, Render and Firebase, reducing deployment time by 65% and increasing release reliability",
+        "",
+        "Managed and mentored a team of interns, accelerating onboarding and improving team productivity through structured code reviews and guidance",
+        "Contributed to agile team success by actively leading sprint planning, refining tickets, conducting code reviews, and driving continuous improvement"
+      ]
+    },
+    {
+      "role": "Full Stack Developer",
+      "company": "Cradx Limited Company",
+      "period": "2020 - Present",
+      "categories": [
+        "tech"
+      ],
+      "highlights": [
+        "Led direct communication with clients to gather technical requirements, improving project alignment and reducing revisions by 40%",
+        "Designed scalable project architecture and optimized database structure, resulting in faster development cycles and improved app performance",
+        "Implemented a CI/CD pipeline using GitHub Actions, Heroku, Render and Firebase, reducing deployment time by 65% and increasing release reliability",
+        "Delivered end-to-end ownership of multiple projects, from requirements gathering to deployment, ensuring timely and successful launches",
+        "Managed and mentored a team of interns, accelerating onboarding and improving team productivity through structured code reviews and guidance",
+        "Contributed to agile team success by actively leading sprint planning, refining tickets, conducting code reviews, and driving continuous improvement"
+      ]
+    },
+    {
+      "role": "Digital Marketing Manager",
+      "company": "Creative Agency",
+      "period": "2017 - 2020",
+      "categories": [
+        "marketing"
+      ],
+      "highlights": [
+        "Grew organic traffic by 250% through SEO strategy",
+        "Managed $500k+ annual ad budget with 5:1 ROAS",
+        "Developed content strategy producing 50+ high-converting pieces"
+      ]
+    }
+  ]
+}

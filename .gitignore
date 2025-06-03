@@ -16,6 +16,7 @@
 # next.js
 /.next/
 /out/
+/.history/
 
 # production
 /build
@@ -40,4 +41,4 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-.hsitory/
+.history/
