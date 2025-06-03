@@ -29,7 +29,8 @@ function ContactPage() {
                 animate="visible"
                 variants={fadeUp}
             >
-                Let's Connect
+                Let&apos;s Connect
+
             </motion.h1>
 
             <div className=" flex flex-row gap-0.5">

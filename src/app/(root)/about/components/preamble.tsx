@@ -1,7 +1,7 @@
 import React from 'react';
-import { Mail, Phone, LocateIcon, Link as LinkIcon } from 'lucide-react';
+import { Mail, Phone, LocateIcon, Linkedin, Link as LinkIcon } from 'lucide-react';
 // import preambleData from '@/data/cv/preamble.json'; // adjust the path as needed
-import preambleData  from '../../../../data/cv/data.json'
+import preambleData from '../../../../data/cv/data.json'
 
 
 type PreambleData = {
@@ -47,6 +47,27 @@ export const Preamble = ({ activeFilter }: Props) => {
             {data.location}
           </span>
         )}
+
+        
+
+        {data.linkedin && (
+          <a
+            href={data.linkedin.startsWith('http') ? data.linkedin : `https://www.linkedin.com/in/${data.linkedin}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 text-primary"
+          >
+            <LinkIcon className="h-5 w-5" />
+            {data.linkedin.replace(/^https?:\/\//, '')}
+          </a>
+        )}
+
+        {/* <a href={preamble.linkedin} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-primary">
+// // //   <LinkedIn className="h-5 w-5" />
+// // //   {preamble.linkedin}
+// // // </a> */}
+
+
         {data.portfolio && (
           <a
             href={data.portfolio.startsWith('http') ? data.portfolio : `https://${data.portfolio}`}

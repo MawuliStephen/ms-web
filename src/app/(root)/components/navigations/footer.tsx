@@ -38,7 +38,7 @@ const Footer = () => {
               <Link href="https://github.com/MawuliStephen" className="text-gray-400 hover:text-white transition-colors">
                 <SvgIcons.GitHub />
               </Link>
-              <Link href="https://linkedin/in/mawuli-stephen" className="text-gray-400 hover:text-white transition-colors">
+              <Link href="https://www.linkedin.com/in/mawuli-stephen" className="text-gray-400 hover:text-white transition-colors">
                 <SvgIcons.LinkedIn />
               </Link>
             </div>
