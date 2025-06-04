@@ -69,14 +69,10 @@ const SkillsSection = () => {
               {`No items found for "${selectedSkill}".`}
             </p>
 
-            <p className="text-gray-500 dark:text-gray-400">
-  No items found for &quot;{selectedSkill}&quot;.
-</p>
-
-
             {/* <p className="text-gray-500 dark:text-gray-400">
               No items found for &quot;{selectedSkill}&quot;.
             </p> */}
+
 
 
 
@@ -85,7 +81,7 @@ const SkillsSection = () => {
           filteredContent.map((item, idx) => (
             <div
               key={idx}
-              className="p-6 bg-gray-100 dark:bg-gray-800 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 text-left"
+              className="p-6 bg-surface dark:bg-surface rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 text-left"
             >
               <h3 className="text-xl font-semibold mb-2 dark:text-foreground">{item.title}</h3>
               <p className="text-sm text-gray-600 dark:text-foreground/70">

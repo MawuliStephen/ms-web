@@ -16,7 +16,7 @@ export default function TechStackSection() {
         {techStack.map((tech, index) => (
           <div
             key={index}
-            className="flex flex-col items-center gap-3 p-4 bg-white dark:bg-gray-800 rounded-lg border border-gray-100 dark:border-gray-700/50 hover:shadow-md transition-all"
+            className="flex flex-col items-center gap-3 p-4 bg-surface dark:bg-gray-800 rounded-lg border border-gray dark:border-gray-700/50 hover:shadow-md transition-all"
           >
             <Image
               src={tech.logo}

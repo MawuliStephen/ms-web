@@ -6,7 +6,7 @@ import HeroMobile from './hero/mobile';
 
 const HeroSection = () => {
   return (
-    <section>
+    <section className='py-10 sm:py-28 md:pt-36 lg:pt-44'>
       {/* Mobile View */}
       <div className="block lg:hidden">
         <HeroMobile />

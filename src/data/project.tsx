@@ -89,7 +89,7 @@ const projects = [
       image: "/porfolio/cgh.png",
       title: "Creatives Coterie",
       description: "NGO website for creatives",
-      url: "https://creativescg.com",
+      url: "https://cc-website-ta61.onrender.com/",
       stack: ["Express js", "Ejs", 'vanilla css', "MongoDb" ]
     },
     {
@@ -99,15 +99,15 @@ const projects = [
       url: "https://royaise.com",
       stack: ["React", "Bootstrap css", "Express js", "mysQl"]
     },
-    {
-      image: "/porfolio/meo-s.png",
-      title: "Meomeo-Saas",
-      // title: "233 Bite",
-      description: "Restraunat Management Website local business",
-      url: "https://meo-s.vercel.app",
-      // url: "https://233bite.com",
-      stack: ["Next.js", "Tailwind.css", "Express js", "handlebars", "mysQl"]
-    },
+    // {
+    //   image: "/porfolio/meo-s.png",
+    //   title: "Meomeo-Saas",
+    //   // title: "233 Bite",
+    //   description: "Restraunat Management Website local business",
+    //   url: "https://meo-s.vercel.app",
+    //   // url: "https://233bite.com",
+    //   stack: ["Next.js", "Tailwind.css", "Express js", "handlebars", "mysQl"]
+    // },
     {
       image: "/porfolio/fastsql.png",
       title: "Fastsqli",

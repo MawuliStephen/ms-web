@@ -15,6 +15,8 @@
       "portfolio": "ms-web-coral.vercel.app",
       "summary": "Highly skilled Software Engineer with 5 years of experience developing and maintaining scalable web and mobile applications. Proficient in Angular, React/Next.js, Flutter and Node.js. Delivered features that boosted user engagement by 30% and cut load times by 40%. Strong in cross-team collaboration, clean code, and fast-paced startup environments. Seeking remote roles at product-focused companies"
     },
+
+
     "marketing": {
       "name": "Stephen Mawuli Dormekpor",
       "title": " Digital Marketing Specialist",
@@ -23,8 +25,11 @@
       "location": "Kumasi , Ghana",
       "linkedin": "mawuli-stephen",
       "portfolio": "ms-web-coral.vercel.app",
-      "summary": "Passionate technologist with 8+ years of experience..."
+      "summary": "Results-driven marketing professional with a strong track record in sales and customer acquisition. Skilled in leveraging digital tools, strategic communication, and relationship-building to drive business growth and deliver measurable value to both clients and companies."
+
     },
+
+
     "all": {
       "name": "Stephen Mawuli Dormekpor",
       "title": "Full Stack Developer & Digital Marketing Specialist",
@@ -33,17 +38,19 @@
       "location": "Kumasi , Ghana",
       "linkedin": "mawuli-stephen",
       "portfolio": "ms-web-coral.vercel.app",
-      "summary": "Multidisciplinary professional with combine 15 years in tech & marketing..."
+      "summary": "Multidisciplinary professional with over 15 years of combined experience in software engineering and digital marketing. Proven ability to design and deliver scalable web and mobile applications using modern technologies like React, Next.js, Node.js, Angular, and Flutter—achieving up to 30% increases in user engagement and 40% reductions in load times. Equally experienced in driving business growth through digital campaigns, customer acquisition, and strategic communication—consistently surpassing sales targets and boosting retention. Adept at collaborating across cross-functional teams in fast-paced environments to create results that serve both users and business objectives."
+
     }
   },
+
   "hobbies": [
     "Open Source Contributions",
-    "Photography",
-    "Hiking",
     "Technical Writing",
-    "Poetry",
+    "Poetry","Fiction","Guitar",
+    "Painting","Nature",
     "Health & Fitness"
   ],
+
   "projects": [
     {
       "name": "233bite | E-commerce Platform",
@@ -71,21 +78,10 @@
       "categories": [
         "tech"
       ]
-    },
-    {
-      "name": "Marketing Dashboard",
-      "description": "Custom analytics platform aggregating data from 10+ sources",
-      "tech": [
-        "React",
-        "Python",
-        "BigQuery",
-        "Data Studio API"
-      ],
-      "categories": [
-        "marketing"
-      ]
     }
+
   ],
+
   "competencies": {
     "groups": [
       "Marketing",
@@ -93,14 +89,17 @@
       "Tools and Software",
       "Other"
     ],
+
     "Marketing": [
-      "Digital Strategy",
+      "Direct Sales",
       "SEO/SEM",
       "Content Marketing",
       "Social Media",
+      "Google Ads", "Meta Ads",
       "Conversion Optimization",
       "Analytics"
     ],
+
     "Technology": [
       "JavaScript",
       "TypeScript",
@@ -173,7 +172,7 @@
         "Led a team of students in a 6-week volunteer internship to successfully develop a functional TikTok clone, strengthening team collaboration and delivery under tight timelines.",
         "Designed and deployed RESTful APIs for both mobile and web platforms, resulting in seamless cross-platform integration and faster development turnaround.",
         "Defined project scope and implemented best practices in code quality and architecture, improving maintainability and team efficiency.",
-        "Set up a CI/CD pipeline using GitHub Actions and Render, which reduced deployment time by 65% and significantly improved code reliability through integrated testing.",
+        "Set up a CI/CD pipeline using GitHub Actions and Render, which significantly improved code reliability through integrated testing.",
         "Coached team members for weekly demos and stakeholder updates, improving presentation quality and stakeholder engagement.",
         "Resolved critical bugs and mentored team members through technical challenges, accelerating development and boosting team problem-solving confidence."
       ]
@@ -194,17 +193,26 @@
         "Contributed to agile team success by actively leading sprint planning, refining tickets, conducting code reviews, and driving continuous improvement"
       ]
     },
-    {
-      "role": "Digital Marketing Manager",
-      "company": "Creative Agency",
-      "period": "2017 - 2020",
-      "categories": [
-        "marketing"
-      ],
+{
+      "role": "Direct Sales Consultant",
+      "company": "Letshego Ghana PLC",
+      "period": "2015 - 2023",
+      "categories": ["marketing"],
       "highlights": [
-        "Grew organic traffic by 250% through SEO strategy",
-        "Managed $500k+ annual ad budget with 5:1 ROAS",
-        "Developed content strategy producing 50+ high-converting pieces"
+        "Generated high-converting social media ad copies that boosted qualified lead engagement by over 40%.",
+        "Maintained strong client relationships, contributing to a 75% customer retention rate over 5 years.",
+        "Consistently exceeded annual sales targets by disbursing over GHS 100,000 monthly, generating an estimated 150% profit at loan maturity."
+      ]
+    },
+    {
+      "role": "Marketing Manager",
+      "company": "Cradx Limited Company",
+      "period": "2019 - 2023",
+      "categories": ["marketing"],
+      "highlights": [
+        "Drove direct sales campaigns that expanded the customer base by 30% within the first year.",
+        "Built a loyal client portfolio, resulting in a 60% repeat customer rate and increased brand trust.",
+        "Surpassed annual financial targets with consistent monthly disbursements exceeding GHS 100,000, contributing to a 150% return on investment at product maturity."
       ]
     }
   ]

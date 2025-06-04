@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import Image from 'next/image';
-// import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import SvgIcons from './svgIcons';
 
 const Footer = () => {
@@ -8,8 +7,11 @@ const Footer = () => {
 
   return (
     // p-4 border rounded-lg bg-surface
-    <footer className="bg-surface pt-12">
-      <div className="max-w-7xl mx-auto px-4 sm:px-0 lg:px-0 grid grid-cols-1 md:grid-cols-3 gap-8">
+    <footer className="bg-gray-900 text-white dark:bg-dark-background text-gray-500 dark:text-foreground pt-12">
+      {/* // <footer className="bg-cream text-gray-700 dark:bg-dark-background dark:text-foreground pt-12"> */}
+{/* <footer className="bg-light-primaryContrast text-light-foreground dark:bg-dark-background dark:text-dark-foreground pt-12"> */}
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-0 grid grid-cols-1 md:grid-cols-3 gap-8">
         <div className="grid">
 
           {/* Logo and description */}
@@ -51,11 +53,12 @@ const Footer = () => {
 
         {/* Contact Info */}
         <div>
-          <h3 className="text-lg font-semibold nav-text mb-4">Contact </h3>
+          <h3 className="text-lg font-semibold mb-4">Contact </h3>
           <address className="not-italic text-gray-400 space-y-2">
             <p>Yaa Asantewaa II Street</p>
             <p>Kumasi - Ashanti</p>
-            <p>Email: stephen.mawuli.dormekpor.com</p>
+            <p>Email: <a href="mailto:stephen.mawuli.dormekpor@gmail.com">stephen.mawuli.dormekpor@gmail.com</a></p>
+
             <p>Phone: +233(571) 697172</p>
           </address>
         </div>
@@ -86,11 +89,7 @@ const Footer = () => {
       {/* Copyright */}
       <div className="border-t border-gray-800 mt-12 py-3 text-center text-gray-400">
         <p>&copy; {currentYear} Mawuli Stephen. All rights reserved.</p>
-        {/* <div className="flex justify-center space-x-6 mt-4">
-          <Link href="/privacy" className="hover:text-white">Privacy Policy</Link>
-          <Link href="/terms" className="hover:text-white">Terms of Service</Link>
-          <Link href="/cookies" className="hover:text-white">Cookie Policy</Link>
-        </div> */}
+      
       </div>
       {/* </div> */}
     </footer>

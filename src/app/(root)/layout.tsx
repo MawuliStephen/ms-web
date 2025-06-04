@@ -1,10 +1,13 @@
-// app/layout.tsx
-// import './globals.css';
-import type { Metadata } from 'next';
+import React from 'react';
 import Header from './components/navigations/header';
 import Footer from './components/navigations/footer';
 
-export const metadata: Metadata = {
+// export const metadata = {
+//   // title: 'Mawuli Stephen | Portfolio',
+//   description: 'Christmas fortune wheel',
+// };
+
+export const metadata = {
   title: 'Mawuli Stephen | Fullstack JavaScript Developer & Software Engineer',
   description:
     'Experienced Fullstack Software Engineer skilled in building high-performance web and mobile applications using React, Next.js, Angular, Node.js, and Flutter. Open to remote opportunities worldwide.',
@@ -45,48 +48,24 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function Layout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <html lang="en">
-      <body className="flex flex-col min-h-screen">
-        <Header />
-        <main className="flex-grow">{children}</main>
-        <Footer />
-      </body>
-    </html>
+    <div className="flex flex-col min-h-screen"> {/* Ensure the container takes the full viewport height */}
+      <header>
+        <Header /> {/* Global Header */}
+      </header>
+
+      <main className="flex-grow"> 
+        {children} {/* This will render HomePage or any other public pages */}
+      </main>
+
+      <footer className="mt-auto"> {/* Ensures the footer sticks to the bottom if content is short */}
+        <Footer /> 
+      </footer>
+    </div>
   );
 }
-
-
-
-
-// import React from 'react';
-// import Header from './components/navigations/header';
-// import Footer from './components/navigations/footer';
-
-// // export const metadata = {
-// //   // title: 'Mawuli Stephen | Portfolio',
-// //   description: 'Christmas fortune wheel',
-// // };
-
-// export default function Layout({
-//   children,
-// }: {
-//   children: React.ReactNode;
-// }) {
-//   return (
-//     <div className="flex flex-col min-h-screen"> {/* Ensure the container takes the full viewport height */}
-//       <header>
-//         <Header /> {/* Global Header */}
-//       </header>
-
-//       <main className="flex-grow"> 
-//         {children} {/* This will render HomePage or any other public pages */}
-//       </main>
-
-//       <footer className="mt-auto"> {/* Ensures the footer sticks to the bottom if content is short */}
-//         <Footer /> {/* Global Footer */}
-//       </footer>
-//     </div>
-//   );
-// }

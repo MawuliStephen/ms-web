@@ -9,6 +9,7 @@ export default {
     colors: {
       // Light theme colors
       light: {
+        cream: '#fdf6e3',
         background: '#ffffff',
         secondaryBackground: '#f0f0f0',
         foreground: '#171717',

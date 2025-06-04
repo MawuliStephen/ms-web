@@ -26,7 +26,7 @@ const ProjectCard = React.memo(({ project, index }: ProjectCardProps) => (
       <Image
         src={project.image}
         alt={project.title}
-        height={400}
+        height={300}
         width={300}
         className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
         loading={index > 2 ? "lazy" : "eager"}
@@ -93,7 +93,7 @@ const ProjectsSection = () => {
     <SectionLayout id="projects" hasBackdrop>
       <SectionHeader
         title="Projects"
-        description="Selection of my recent work and contributions."
+        description="Selection of my recent work and contributions that are at various levels of completion."
       />
 
       <div 

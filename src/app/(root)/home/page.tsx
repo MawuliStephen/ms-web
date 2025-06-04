@@ -3,7 +3,7 @@ import React from 'react';
 import HeroSection from './hero';
 import ProjectsSection from './projects';
 import TechStackSection from './teckstack';
-import SkillsSection from './skills';
+// import SkillsSection from './skills';
 import JsonLd from '../components/JsonLd';
 
 
@@ -18,7 +18,7 @@ const HomePage = () => {
       <ProjectsSection />
       <TechStackSection />
 
-      <SkillsSection />
+      {/* <SkillsSection /> */}
 
     </div>
   );
