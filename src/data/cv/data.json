@@ -13,7 +13,7 @@
       "location": "Kumasi , Ghana",
       "linkedin": "mawuli-stephen",
       "portfolio": "ms-web-coral.vercel.app",
-      "summary": "Highly skilled Software Engineer with 5 years of experience developing and maintaining scalable web and mobile applications. Proficient in Angular, React/Next.js, Flutter and Node.js. Delivered features that boosted user engagement by 30% and cut load times by 40%. Strong in cross-team collaboration, clean code, and fast-paced startup environments. Seeking remote roles at product-focused companies"
+      "summary": "Highly skilled Software Engineer with 5 years of experience developing and maintaining scalable web and mobile applications. Proficient in Angular, React/Next.js, Flutter Node.js and C#. Delivered features that boosted user engagement by 30% and cut load times by 40%. Strong in cross-team collaboration, clean code, and fast-paced startup environments. Seeking remote roles at product-focused companies"
     },
 
 
@@ -38,7 +38,7 @@
       "location": "Kumasi , Ghana",
       "linkedin": "mawuli-stephen",
       "portfolio": "ms-web-coral.vercel.app",
-      "summary": "Multidisciplinary professional with over 15 years of combined experience in software engineering and digital marketing. Proven ability to design and deliver scalable web and mobile applications using modern technologies like React, Next.js, Node.js, Angular, and Flutter—achieving up to 30% increases in user engagement and 40% reductions in load times. Equally experienced in driving business growth through digital campaigns, customer acquisition, and strategic communication—consistently surpassing sales targets and boosting retention. Adept at collaborating across cross-functional teams in fast-paced environments to create results that serve both users and business objectives."
+      "summary": "Multidisciplinary professional with over 15 years of combined experience in software engineering and digital marketing. Proven ability to design and deliver scalable web and mobile applications using modern technologies like React, Next.js, Node.js, C#, Angular, and Flutter—achieving up to 30% increases in user engagement and 40% reductions in load times. Equally experienced in driving business growth through digital campaigns, customer acquisition, and strategic communication—consistently surpassing sales targets and boosting retention. Adept at collaborating across cross-functional teams in fast-paced environments to create results that serve both users and business objectives."
 
     }
   },
@@ -108,6 +108,7 @@
       "Angular",
       "Flutter",
       "Node.js",
+      "C#",
       "Express.js",
       "HTML5",
       "CSS3",
@@ -170,7 +171,7 @@
       ],
       "highlights": [
         "Led a team of students in a 6-week volunteer internship to successfully develop a functional TikTok clone, strengthening team collaboration and delivery under tight timelines.",
-        "Designed and deployed RESTful APIs for both mobile and web platforms, resulting in seamless cross-platform integration and faster development turnaround.",
+        "Designed and deployed C# RESTful APIs for both mobile and web platforms, resulting in seamless cross-platform integration and faster development turnaround.",
         "Defined project scope and implemented best practices in code quality and architecture, improving maintainability and team efficiency.",
         "Set up a CI/CD pipeline using GitHub Actions and Render, which significantly improved code reliability through integrated testing.",
         "Coached team members for weekly demos and stakeholder updates, improving presentation quality and stakeholder engagement.",

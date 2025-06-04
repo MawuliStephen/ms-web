@@ -2,7 +2,7 @@
 
 // || 'http://localhost:5000/api/v1'
 
-// const BASE_URL = process.env.NEXT_PUBLIC_API_URL 
+const BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000/api/v1';
 
 
 import { getAuthToken } from "./auth";
@@ -29,11 +29,7 @@ const request = async <T = unknown>(url: string, method: string, data?: object):
   return response.json() as Promise<T>;
 };
 
-  // Add body if data is provided
-  // if (data) {
-  //   options.body = JSON.stringify(data);
-  // }
-
+ 
 
 //HTTP GET
 export const getData = async (url: string) => {
@@ -44,6 +40,8 @@ export const getData = async (url: string) => {
 
 // HTTP POST
 export const postData = async (url: string, data: object) => {
+  console.log(`Fetching data from: ${url}`);  // Log the URL you're fetching from
+
   return request(url, 'POST', data);
 };
 

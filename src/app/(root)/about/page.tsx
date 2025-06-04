@@ -31,7 +31,7 @@ export const metadata = {
 
   openGraph: {
     title: 'Mawuli Stephen - About | Software Engineer',
-    description: 'Highly skilled Software Engineer with 5 years of experience developing and maintaining scalable web and mobile applications. Proficient in Angular, React/Next.js, Flutter and Node.js.',
+    description: 'Highly skilled Software Engineer with 5 years of experience developing and maintaining scalable web and mobile applications. Proficient in Angular, React/Next.js, Flutter, Node.js and C#.',
     images: '/image/mawuli-stephen.jpg',
   },
 };
