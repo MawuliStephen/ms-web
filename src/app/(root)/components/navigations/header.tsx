@@ -48,7 +48,7 @@ const Header = () => {
 
   return (
     <header className="fixed z-30 w-screen  bg-teal-900 border-b-2 border-b-gray-200/10 backdrop-blur-sm">
-      <div className=" mx-auto max-w-7xl h-10 md:h-20 flex items-center justify-between px-4 md:px-5 sm:px-0 lg:px-0">
+      <div className=" mx-auto max-w-7xl h-10 md:h-20 flex items-center justify-between px-4 md:px-5 sm:px-0 lg:px-10">
        
         <Link href="/">
           <Image         className="w-16 md:w-24 lg:w-25 cursor-pointer"
