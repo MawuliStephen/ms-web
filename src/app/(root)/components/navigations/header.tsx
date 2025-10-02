@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import Image from "next/image";
 import { AlignJustify } from "lucide-react";
-import ThemeToggle from "./theme";
+// import ThemeToggle from "./theme";
 import DesktopNav from "./nav/desktop";
 import MobileNav from "./nav/mobile";
 import { MenuItem } from "./nav/types";
@@ -71,7 +71,7 @@ const Header = () => {
           <Link href="/contact">
             <Button variant="outline" className="">Contact Us</Button>
           </Link>
-          <ThemeToggle />
+          {/* <ThemeToggle /> */}
         </div>
 
         {/* Mobile Hamburger */}

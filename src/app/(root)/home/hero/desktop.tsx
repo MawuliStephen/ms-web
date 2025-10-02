@@ -23,17 +23,17 @@ const HeroDesktop = () => {
         </p>
 
         <div className="flex flex-col md:flex-row justify-center gap-4 items-center">
-          <Link href="/portfolio">
-            <Button className="px-6 py-3">
+          <Link href="/contact">
+            <Button className="px-6 blue-900 py-3">
               Talk to me
             </Button>
           </Link>
 
-          <Link href="/contact">
+          {/* <Link href="/contact">
             <Button variant="outline" className="px-6 py-3 flex items-center gap-2">
               Let’s Collaborate
             </Button>
-          </Link>
+          </Link> */}
         </div>
 
         {/* Social icons below buttons */}
