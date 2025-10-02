@@ -1,354 +1,175 @@
 @import "tailwindcss";
+@plugin "tailwindcss-animate";
+@import "tw-animate-css";
 
-@theme {
-  --color-background: #ffffff;
-  --color-foreground: #171717;
-  --color-primary: #008080;
-  --color-primary-contrast: #b9e7e7;
-  --color-surface: #f5f5f5;
-  --color-card: #e5e5e5;
-  --color-muted: #525252;
-  --font-sans: "Helvetica Neue", sans-serif;
-  --font-mono: "Courier New", monospace;
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+
+  /* Global color mappings */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  /* Optional: Chart + sidebar colors */
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+:root {
+  /* Radius */
+  --radius: 0.625rem;
+
+  /* Base colors (Light mode) */
+  --background: oklch(1 0 0);                               /* white */
+  --foreground: oklch(0.13 0.028 261.692);                  /* slate-900 */
+
+  --card: oklch(0.98 0.005 260);                            /* light neutral card */
+  --card-foreground: var(--foreground);
+
+  --popover: var(--card);
+  --popover-foreground: var(--foreground);
+
+  --primary: oklch(0.21 0.12 180);                          /* teal-900 */
+  --primary-foreground: oklch(0.985 0.002 247.839);         /* off-white */
+
+  --secondary: oklch(0.92 0.05 180);                        /* teal-100 */
+  --secondary-foreground: var(--primary);
+
+  --muted: oklch(0.95 0.01 240);                            /* light slate */
+  --muted-foreground: oklch(0.5 0.03 260);                  /* slate-500 */
+
+  --accent: oklch(0.98 0.01 200);                           /* aqua-tint */
+  --accent-foreground: var(--primary);
+
+  --destructive: oklch(0.577 0.245 27.325);                 /* warning/red */
+  --border: oklch(0.9 0.01 240);                            /* subtle grey border */
+  --input: oklch(0.92 0.01 240);
+  --ring: oklch(0.3 0.1 180);                               /* teal ring */
+
+  /* Chart / Sidebar colors (optional) */
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
+
+  --sidebar: var(--card);
+  --sidebar-foreground: var(--foreground);
+  --sidebar-primary: var(--primary);
+  --sidebar-primary-foreground: var(--primary-foreground);
+  --sidebar-accent: var(--accent);
+  --sidebar-accent-foreground: var(--accent-foreground);
+  --sidebar-border: var(--border);
+  --sidebar-ring: var(--ring);
+}
+
+.dark {
+  --background: oklch(0.13 0.028 261.692);                  /* slate-900 */
+  --foreground: oklch(0.985 0.002 247.839);                 /* light text */
+
+  --card: oklch(0.2 0.03 260);                              /* slate-800 */
+  --card-foreground: var(--foreground);
+
+  --popover: var(--card);
+  --popover-foreground: var(--foreground);
+
+  --primary: oklch(0.6 0.15 180);                           /* teal-400 */
+  --primary-foreground: oklch(0.1 0.01 260);                /* near-black */
+
+  --secondary: oklch(0.3 0.05 260);                         /* slate muted */
+  --secondary-foreground: var(--foreground);
+
+  --muted: oklch(0.3 0.03 260);                             /* slate-muted */
+  --muted-foreground: oklch(0.7 0.03 260);                  /* light slate */
+
+  --accent: oklch(0.35 0.04 200);
+  --accent-foreground: var(--foreground);
+
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: oklch(0.3 0.02 260);
+  --input: oklch(0.2 0.02 260);
+  --ring: oklch(0.6 0.1 180);                               /* teal ring */
+
+  --chart-1: oklch(0.488 0.243 264.376);
+  --chart-2: oklch(0.696 0.17 162.48);
+  --chart-3: oklch(0.769 0.188 70.08);
+  --chart-4: oklch(0.627 0.265 303.9);
+  --chart-5: oklch(0.645 0.246 16.439);
+
+  --sidebar: var(--card);
+  --sidebar-foreground: var(--foreground);
+  --sidebar-primary: var(--primary);
+  --sidebar-primary-foreground: var(--primary-foreground);
+  --sidebar-accent: var(--accent);
+  --sidebar-accent-foreground: var(--accent-foreground);
+  --sidebar-border: var(--border);
+  --sidebar-ring: var(--ring);
 }
 
 @layer base {
-
-  :root,
-  [data-theme="light"] {
-    --color-background: #ffffff;
-    --color-secondaryBackground: #f5f5f5;
-    --color-surface: #f5f5f5;
-    --color-card: #e5e5e5;
-    --color-foreground: #171717;
-    --color-muted: #525252;
-    --color-primary: #008080;
-    --color-primary-contrast: #b9e7e7;
-
-
-    /* Section-specific variables */
-    --nav-bg: var(--color-primary);
-    --nav-text: var(--color-primary-contrast);
-    --header-bg: var(--color-background);
-    --header-text: var(--color-foreground);
-    --card-bg: #f3f4f6;
-    --card-text: #1f2937;
-    --footer-bg: var(--color-primary);
-    --footer-text: var(--color-primary-contrast);
+  * {
+    @apply border-border outline-ring/50;
   }
-
-  [data-theme="dark"] {
-    --color-background: #0a0a0a;
-    --color-surface: #171717;
-    --color-card: #262626;
-    --color-foreground: #e5e5e5;
-    --color-muted: #a3a3a3;
-    --color-primary: #00b3b3;
-    --color-primary-contrast: #004d4d;
-
-
-    /* Section overrides */
-    --nav-bg: var(--color-background);
-    --nav-text: var(--color-foreground);
-    --header-bg: #1f2937;
-    --header-text: var(--color-foreground);
-    --card-bg: #1f2937;
-    --card-text: #e5e7eb;
-    --footer-bg: #0d9488;
-    --footer-text: var(--color-primary-contrast);
-  }
-
-
-
-
-
-
-  /* Navigation-specific styles */
-  .nav-container {
-    background-color: var(--nav-bg);
-    color: var(--nav-text);
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
-
-
-  .section-background {
-    background-color: var(--color-background);
-    color: var(--color-foreground);
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
-
 
   body {
-    background-color: var(--color-background);
-    /* color: var(--color-foreground); */
-    font-family: var(--font-sans);
-    transition: background-color 0.3s ease, color 0.3s ease;
+    @apply bg-background text-foreground;
   }
 
-  /* Selection colors */
-  ::selection {
-    background-color: var(--color-primary);
-    color: var(--color-primary-contrast);
+  .nav-link {
+  @apply cursor-pointer transition-colors duration-200 font-medium text-white hover:text-primary dark:hover:text-primary;
   }
+
+.nav-link-active {
+  @apply text-teal-100 font-bold dark:text-black;
+
+}
+
 }
 
 
-
-@layer components {
-
-  /* Button Styles */
-  .btn {
-    background-color: var(--color-primary);
-    color: var(--color-primary-contrast);
-    padding: 0.5rem 1rem;
-    border-radius: 0 !important;
-    font-family: var(--font-sans);
-    font-weight: 500;
-    transition: all 0.2s ease;
-    border: 1px solid transparent;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    white-space: nowrap;
-  }
-
-  .btn:hover {
-    background-color: var(--color-primary-contrast);
-    color: var(--color-primary);
-    border-color: var(--color-primary);
-  }
-
-  .btn-outline {
-    background-color: transparent;
-    color: var(--color-primary);
-    /* border-color: var(--color-primary) !important; */
-    padding: 0.5rem 1rem;
-
-  }
-
-  .btn-outline:hover {
-    background-color: var(--color-primary);
-    color: var(--color-primary-contrast);
-  }
-
-  /* Navigation Text */
-  .nav-text {
-    font-size: 1rem;
-    font-weight: 500;
-    color: var(--color-background);
-    color: var(--color-primary-contrast);
-
-    transition: color 0.2s ease;
-  }
-
-
-  /* Typography */
-  .title {
-    font-size: 1.875rem;
-    font-weight: 700;
-    color: var(--color-foreground);
-    line-height: 1.2;
-    margin-bottom: 1rem;
-  }
-
-  .subtitle {
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: var(--color-foreground);
-    line-height: 1.3;
-    margin-bottom: 0.75rem;
-  }
-
-  .body-text {
-    font-size: 1rem;
-    font-weight: 400;
-    color: var(--color-foreground);
-    line-height: 1.5;
-  }
-
-  .body-text-lg {
-    font-size: 1.125rem;
-    font-weight: 400;
-    color: var(--color-foreground);
-    line-height: 1.6;
-  }
-
-  /* Cards */
-  .card {
-    /* background-color: var(--color-card); */
-    background-color: var(--card-bg);
-    border-radius: 0.5rem;
-    padding: 1.5rem;
-    transition: all 0.3s ease;
-  }
-
-  .card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-
-  #projects {
-    background-color: var(--bg-surface);
-    /* p-4 border rounded-lg bg-surface */
-  }
-
-  /* #skills{
-    background-color:var(--color-primary-contrast);
-  } */
-}
-
-@layer utilities {
-
-  /* Background Utilities */
-  /* .bg {
-    background-color: var(--color-primary) !important;
-  } */
-
-  .bg-surface {
-    background-color: var(--color-surface);
-  }
-
-  .bg-card {
-    background-color: var(--color-card);
-  }
-
-  /* Text Utilities */
-  .text-muted {
-    color: var(--color-muted);
-  }
-
-  /* Border Utilities */
-  .border-primary {
-    border-color: var(--color-primary) !important;
-  }
-
-  .border-surface {
-    border-color: var(--color-surface);
-  }
-
-  /* Responsive Typography */
-  @media (min-width: 768px) {
-    .title {
-      font-size: 2.25rem;
-    }
-
-    .subtitle {
-      font-size: 1.5rem;
-    }
-  }
-
-  @media (min-width: 1024px) {
-    .title {
-      font-size: 3rem;
-    }
-  }
-
-  /* Transitions */
-  .transition-colors {
-    transition-property: background-color, border-color, color, fill, stroke;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 150ms;
-  }
-
-  /* Focus States */
-  .focus-ring {
-    outline: 2px solid transparent;
-    outline-offset: 2px;
-    box-shadow: 0 0 0 2px var(--color-background), 0 0 0 4px var(--color-primary);
-  }
-}
-
-/* Additional Global Styles */
-a {
-  color: var(--color-primary);
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
-
-a:hover {
-  color: var(--color-primary-contrast);
-  /* text-decoration: underline; */
-}
-
-/* Scrollbar Styling */
-::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: var(--color-surface);
-}
-
-::-webkit-scrollbar-thumb {
-  background: var(--color-primary);
-  border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: var(--color-primary-contrast);
-}
-
-/* styles/globals.css or wherever you inject global styles */
-/* .pdf-mode * {
-  Force fallback colors compatible with html2canvas
-  color: black !important;
-  background-color: white !important;
-  box-shadow: none !important;
-  text-shadow: none !important;
-} */
-
-/* .pdf-mode .print-area {
-  width: 794px;     exact A4 width at 96dpi
-  font-size: 12pt;
-  color: black !important;
-  background-color: white !important;
-} */
-
-/* Different styles only for PDF export */
-.pdf-mode {
-  width: 794px;
-  /* A4 in px at 96dpi */
-  font-size: 12pt;
-  background: white;
-  color: black;
-  padding: 2rem;
-  line-height: 1.5;
-}
-
-.pdf-mode .section-title {
-  font-size: 18pt;
-  font-weight: bold;
-  margin-bottom: 12px;
-}
-
-.pdf-mode p {
-  font-size: 12pt;
-  margin-bottom: 10px;
-}
-
-
-.bg-blur-2:before, .bg-blur:after
-/* Specificity: (0,1,1) */
- {
-    content: "";
-    height: 100%;
-    width: 100%;
-}
-
-.bg-blur-2:before {
+/* .bg-blur-2:before {
     background-image: url(https://i.ibb.co/XF2gqZz/sika.jpg);
     background-size: cover;
     position: absolute;
     filter: blur(500px);
     opacity: .1;
     z-index:-10;
-}
+} */
 
 /* You can add as many overrides as needed */
 
-@media only screen and (max-width: 768px) {
+/* @media only screen and (max-width: 768px) {
     .right img {
         height: 100% !important;
         max-width: 100%;
@@ -360,4 +181,4 @@ a:hover {
     .right, .right img {
         width: 100% !important;
     }
-}
+} */

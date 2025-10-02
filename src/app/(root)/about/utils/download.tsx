@@ -62,7 +62,7 @@ export function DownloadPDFButton({
 
 
   return (
-   <div className="hidden">
+   <div className="">
   <Button variant="default" onClick={handleDownload}>
     Download PDF
   </Button>

@@ -1,5 +1,5 @@
 'use client'; // Mark this as a client-side component
-import Register from '@/app/src/components/registerComponent';
+import Register from '@/components/registerComponent';
 import React from 'react'
 
 const RegisterPage = () => {

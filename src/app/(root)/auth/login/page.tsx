@@ -1,5 +1,5 @@
 'use client'; // Mark this as a client-side component
-import Login from '@/app/src/components/loginComponent'
+import Login from '@/components/loginComponent'
 import React from 'react'
 
 const LoginPage = () => {

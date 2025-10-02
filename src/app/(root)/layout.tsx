@@ -2,13 +2,9 @@ import React from 'react';
 import Header from './components/navigations/header';
 import Footer from './components/navigations/footer';
 
-// export const metadata = {
-//   // title: 'Mawuli Stephen | Portfolio',
-//   description: 'Christmas fortune wheel',
-// };
 
 export const metadata = {
-  title: 'Mawuli Stephen | Fullstack JavaScript Developer & Software Engineer',
+  title: 'Mawuli Stephen | Fullstack Software Engineer',
   description:
     'Experienced Fullstack Software Engineer skilled in building high-performance web and mobile applications using React, Next.js, Angular, Node.js, and Flutter. Open to remote opportunities worldwide.',
   keywords: [
@@ -54,12 +50,12 @@ export default function Layout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="flex flex-col min-h-screen"> {/* Ensure the container takes the full viewport height */}
+    <div className="min-h-screen"> {/* Ensure the container takes the full viewport height */}
       <header>
         <Header /> {/* Global Header */}
       </header>
 
-      <main className="flex-grow"> 
+      <main className=""> 
         {children} {/* This will render HomePage or any other public pages */}
       </main>
 
