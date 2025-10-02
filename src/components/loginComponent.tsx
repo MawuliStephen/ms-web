@@ -1,8 +1,8 @@
 // src/components/LoginPage.tsx
 'use client';
 import React from 'react';
-import { SectionLayout } from '../../(root)/components/navigations/section-layout';
-import useFormSubmit from '../hooks/useFormSubmit';
+import { SectionLayout } from '../app/(root)/components/navigations/section-layout';
+import useFormSubmit from '../app/src/hooks/useFormSubmit';
 
 const Login = () => {
   const { formData, loading, handleSubmit, handleChange } = useFormSubmit(

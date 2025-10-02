@@ -1,6 +1,7 @@
 // components/Header.tsx
 "use client";
 import { useState, useEffect } from "react";
+import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import Image from "next/image";
 import { AlignJustify } from "lucide-react";
@@ -46,11 +47,11 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="fixed z-30 w-screen nav-container">
-      <div className="nav-top mx-auto h-10 md:h-20 flex items-center justify-between px-4 sm:px-6 lg:px-8">
+    <header className="fixed z-30 w-screen  bg-teal-900 border-b-2 border-b-gray-200/10 backdrop-blur-sm">
+      <div className=" mx-auto max-w-7xl h-10 md:h-20 flex items-center justify-between px-4 md:px-5 sm:px-0 lg:px-0">
+       
         <Link href="/">
-          <Image
-            className="w-16 md:w-24 lg:w-25 cursor-pointer"
+          <Image         className="w-16 md:w-24 lg:w-25 cursor-pointer"
             alt="Logo"
             src="/logo.png"
             width={80}
@@ -68,18 +69,18 @@ const Header = () => {
 
         <div className="hidden sm:flex items-center space-x-6">
           <Link href="/contact">
-            <button className="btn">Contact Us</button>
+            <Button variant="outline" className="">Contact Us</Button>
           </Link>
           <ThemeToggle />
         </div>
 
         {/* Mobile Hamburger */}
         <div className="sm:hidden">
-          <AlignJustify className="cursor-pointer" onClick={() => setIsMobileMenuOpen(true)} />
+          <AlignJustify className="cursor-pointer text-white" onClick={() => setIsMobileMenuOpen(true)} />
         </div>
       </div>
 
-      <MobileNav
+      <MobileNav 
         isMobileMenuOpen={isMobileMenuOpen}
         activeMenu={activeMenu}
         openDropdown={openDropdown}

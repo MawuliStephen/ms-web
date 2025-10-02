@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 // import useRegisterForm from '../hooks/useRegisterForm';
-import useRegisterForm from '../hooks/userRegisterForm';
+import useRegisterForm from '../app/src/hooks/userRegisterForm';
 
 const Register = () => {
   const { formData, loading, handleSubmit, handleChange } = useRegisterForm(

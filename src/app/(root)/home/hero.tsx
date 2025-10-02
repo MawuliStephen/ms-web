@@ -1,27 +1,43 @@
 'use client';
 
 import React from 'react';
-import HeroDesktop from './hero/desktop';
-import HeroMobile from './hero/mobile';
+import Hero from './hero/desktop';
 
 const HeroSection = () => {
   return (
-    <section className='py-10 sm:py-28 md:pt-36 lg:pt-44'>
-      {/* Mobile View */}
-      <div className="block lg:hidden">
-        <HeroMobile />
-      </div>
+  <section className="relative bg-teal-900 overflow-hidden">
+  {/* Faint dot pattern */}
+  <div className="absolute inset-0 bg-[url('/dot.svg')] bg-repeat bg-left-top bg-[length:40px_40px] opacity-80 z-0 pointer-events-none" />
+ 
+  {/* Content on top */}
+  <div className="relative z-10 py-10 md:pt-36 lg:pt-44">
+    <Hero />
+  </div>
+</section>
 
-      {/* Desktop View */}
-      <div className="hidden lg:block">
-        <HeroDesktop />
-      </div>
-    </section>
   );
 };
 
 export default HeroSection;
 
+// 'use client';
+
+// import React from 'react';
+// import Hero from './hero/desktop';
+
+// const HeroSection = () => {
+//   return (
+//     <section
+//       className="bg-teal-900 bg-[url('/dot.svg')] bg-repeat bg-left-top py-10 w-full mx-auto"
+//     >
+//       <div className="lg:block md:pt-36 lg:pt-44">
+//         <Hero />
+//       </div>
+//     </section>
+//   );
+// };
+
+// export default HeroSection;
 
 
 

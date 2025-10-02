@@ -24,10 +24,10 @@ const MobileNav = ({
 }: Props) => {
   return (
     <div
-      className={`fixed z-30 top-0 right-0 h-full w-64 bg-white shadow-lg transition-transform duration-300 ease-in-out ${isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
+      className={`fixed z-30 top-0 right-0 h-full w-64 bg-teal-900 shadow-lg transition-transform duration-300 ease-in-out ${isMobileMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
     >
-      <nav className="h-full">
+      <nav className="h-full bg-">
         <div className="flex justify-end me-2 p-2">
           <X
             className="cursor-pointer"
