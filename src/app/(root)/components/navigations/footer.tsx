@@ -11,7 +11,7 @@ const Footer = () => {
       {/* Faint dot background */}
       <div className="absolute inset-0 bg-[url('/dot.svg')] bg-repeat bg-left-top bg-[length:40px_40px] opacity-10 z-0 pointer-events-none" />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 xl:px-0 grid grid-cols-1 md:grid-cols-3 gap-12">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-10  grid grid-cols-1 md:grid-cols-3 gap-12">
         {/* Logo & About */}
         <div className="space-y-4">
           <Link href="/">
