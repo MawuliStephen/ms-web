@@ -32,22 +32,22 @@ const ProjectCard = React.memo(({ project, index }: ProjectCardProps) => (
         loading={index > 2 ? "lazy" : "eager"}
       />
     </div>
-    <div className='p-6 '> 
+    <div className='p-6 '>
 
-    <h3 className="text-xl font-semibold mb-2 dark:text-foreground">{project.title}</h3>
-    <p className="text-gray-600 dark:text-foreground/70 mb-4 text-sm line-clamp-2">
-      {project.description}
-    </p>
-    <div className="flex flex-wrap gap-2">
-      {project.stack.map((tech, idx) => (
-        <span
-          key={`${project || index}-tech-${idx}`}
-          className="text-xs px-2 py-1 bg-primary/10 text-primary dark:text-primary-light rounded-full"
-        >
-          {tech}
-        </span>
-      ))}
-    </div>
+      <h3 className="text-xl font-semibold mb-2 dark:text-foreground">{project.title}</h3>
+      <p className="text-gray-600 dark:text-foreground/70 mb-4 text-sm line-clamp-2">
+        {project.description}
+      </p>
+      <div className="flex flex-wrap gap-2">
+        {project.stack.map((tech, idx) => (
+          <span
+            key={`${project || index}-tech-${idx}`}
+            className="text-xs px-2 py-1 bg-primary/10 text-primary dark:text-primary-light rounded-full"
+          >
+            {tech}
+          </span>
+        ))}
+      </div>
     </div>
   </a>
 ));
@@ -91,12 +91,11 @@ const ProjectsSection = () => {
 
   return (
     <SectionLayout id="projects" hasBackdrop>
-      <SectionHeader
-        title="Projects"
+      <SectionHeader title="Projects"
         description="Selection of my recent work and contributions that are at various levels of completion."
       />
 
-      <div 
+      <div
         className="relative overflow-hidden min-h-[500px]"
         onTouchStart={handleTouchStart}
         onTouchMove={handleTouchMove}
@@ -106,8 +105,6 @@ const ProjectsSection = () => {
         <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {getPaginatedProjects().map((project, index) => (
             <ProjectCard
-            // key={project.id}
-            //  key={project.title || globalIndex}
 
               key={`${project.title || index}`}
               project={project}
@@ -122,9 +119,8 @@ const ProjectsSection = () => {
               <button
                 key={index}
                 onClick={() => setCurrentPage(index)}
-                className={`w-3 h-3 rounded-full transition-colors ${
-                  currentPage === index ? 'bg-primary' : 'bg-gray-300 dark:bg-gray-600'
-                }`}
+                className={`w-3 h-3 rounded-full transition-colors ${currentPage === index ? 'bg-primary' : 'bg-gray-300 dark:bg-gray-600'
+                  }`}
                 aria-label={`Go to page ${index + 1}`}
               />
             ))}
